@@ -1,0 +1,2711 @@
+@font-face {
+  font-family: "tommylight";
+  src: url("/MADE\ TOMMY\ Light_PERSONAL\ USE.woff2");
+}
+
+@font-face {
+  font-family: "tommyregular";
+  src: url("/MADE\ TOMMY\ Regular_PERSONAL\ USE.woff2");
+}
+
+@keyframes changeColor {
+  0% {
+    fill: rgb(245, 219, 205);
+  }
+  100% {
+    fill: rgb(212, 93, 89);
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "tommylight";
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100vw;
+}
+
+nav {
+  position: relative;
+}
+
+A {
+  text-decoration: none;
+  color: #000000;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #c57465;
+  transition: 0.5s;
+}
+
+P {
+  padding-bottom: 2%;
+}
+
+li {
+  font-family: Georgia, "Times New Roman", Times, serif !important;
+  text-align: justify;
+}
+
+.loader {
+  font-family: "tommyregular";
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1500;
+}
+
+.lettre {
+  font-family: "tommyregular";
+}
+
+.logo2 {
+  position: absolute;
+  top: 30%;
+}
+
+.lettre {
+  color: #f19d84;
+  font-size: 80px;
+  letter-spacing: 15px;
+  margin-top: 300px;
+  margin-bottom: 150px;
+  animation: flash 1.2s linear infinite;
+}
+
+.lettre2 {
+  opacity: 0;
+}
+
+@keyframes flash {
+  0% {
+    color: #ffffff;
+    text-shadow: white;
+  }
+  90% {
+    color: #f19d84;
+    text-shadow: none;
+  }
+  100% {
+    color: white;
+    text-shadow: 0 0 7px white;
+  }
+}
+
+.lettre:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.lettre:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.lettre:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.lettre:nth-child(4) {
+  animation-delay: 0.4s;
+}
+.lettre:nth-child(5) {
+  animation-delay: 0.5s;
+}
+.lettre:nth-child(6) {
+  animation-delay: 0.6s;
+}
+.lettre:nth-child(7) {
+  animation-delay: 0.7s;
+}
+.lettre:nth-child(8) {
+  animation-delay: 0.8s;
+}
+.lettre:nth-child(9) {
+  animation-delay: 0.9s;
+}
+
+.fondu-out {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+.header {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 14vh;
+  padding-top: 1%;
+  z-index: 2;
+  transition: 0.5s;
+}
+
+.scroll-down .header {
+  transform: translate3d(0, -100%, 0);
+}
+.scroll-up .header {
+  transform: none;
+}
+
+.active {
+  background-color: rgba(255, 255, 255, 0.781);
+}
+
+#logo1 {
+  width: 160px;
+}
+
+h1 {
+  font-size: 26px;
+  padding-bottom: 2%;
+  padding-top: 2%;
+  overflow: hidden;
+}
+
+h2 {
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+h3 {
+  padding-bottom: 2%;
+  font-size: 15px;
+}
+
+h5 {
+  font-size: 17px;
+  padding-bottom: 2%;
+}
+
+h6 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  padding-bottom: 2%;
+}
+
+h4 {
+  font-size: 24px;
+  padding-bottom: 2%;
+  padding-left: 2%;
+}
+
+.adresse {
+  font-size: 20px;
+  font-weight: lighter;
+  color: #000000;
+  text-align: center;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rdv {
+  font-size: 17px;
+  fill: aliceblue;
+  perspective: 100px;
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(to right, #e9c3b1da 0%, #fcb69fde 100%);
+  height: 50px;
+  width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.2px solid rgb(216, 209, 202);
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 0.8%;
+  transition: 0.5s;
+}
+
+.rdv:hover {
+  background-color: rgba(53, 73, 99, 0.993);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.numero {
+  fill: aliceblue;
+  perspective: 100px;
+  color: rgb(0, 0, 0);
+  background-image: linear-gradient(to right, #e9c3b1da 0%, #fcb69fde 100%);
+  height: 50px;
+  width: 210px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0.2px solid rgb(216, 209, 202);
+  box-sizing: border-box;
+  border-radius: 25px;
+  padding: 0.8%;
+  transition: 0.5s;
+}
+
+.numero:hover {
+  background-color: rgba(36, 76, 133, 0.945);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.burger div {
+  width: 35px;
+  height: 3px;
+  background-color: #f19d84;
+  margin: 7px;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.burger {
+  display: block;
+  cursor: pointer;
+  fill: #f19d84;
+}
+
+.nav-links {
+  position: fixed;
+  top: 18%;
+  padding-bottom: 2%;
+  left: 2%;
+  right: 1%;
+  height: 76%;
+  background-image: linear-gradient(
+    70deg,
+    rgba(240, 248, 255, 0.89) 20%,
+    #e2e8ecfa 100%,
+    #fffffff8 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 96%;
+  text-decoration: none;
+  letter-spacing: 3px;
+  justify-content: space-around;
+  font-size: 22px;
+  border-radius: 8px;
+  visibility: hidden;
+}
+
+.nav-active {
+  -webkit-animation-name: fadeInOpacity;
+  animation-name: fadeInOpacity;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in;
+  animation-timing-function: ease-in;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+}
+
+@-webkit-keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.nav-links li {
+  font-family: "tommyregular" !important;
+  list-style: none;
+  text-decoration: none;
+  opacity: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.nav-active {
+  display: flex;
+  opacity: 100;
+  visibility: visible;
+  opacity: 1;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-6px, 8px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-6px, -8px);
+}
+
+
+.rdv2 {
+  fill: aliceblue;
+  font-weight: lighter;
+  color: rgb(9, 16, 22);
+  background-color: rgba(241, 209, 183, 0.829);
+  font-size: 18px;
+  height: 8%;
+  width: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgb(255, 255, 255);
+  box-sizing: border-box;
+  border-radius: 20px;
+  margin-top: 10%;
+  margin-left: 20%;
+  padding: 1%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.rdv2:hover {
+  background-color: rgba(56, 138, 192, 0.658);
+  transition: 0.5s;
+}
+
+.titre1 {
+  width: 100vw;
+  font-size: 34px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(107, 145, 189, 0.295);
+  position: absolute;
+  top: 17%;
+  overflow: hidden;
+  padding: 15px;
+  z-index: 10;
+}
+
+.ptitre1 {
+  margin-left: 150px;
+}
+
+.titretraitements {
+  font-size: 30px;
+  width: 70%;
+  padding: 3%;
+  color: rgb(10, 19, 24);
+  background-color: rgba(255, 255, 255, 0.705);
+  overflow: hidden;
+  letter-spacing: 1.2px;
+  margin-left: 21%;
+  border-bottom: black solid 1px;
+}
+
+.banner {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  z-index: 0;
+}
+
+.secondmenu {
+  position: absolute;
+  left: -1%;
+  top: 25%;
+  display: flex;
+  width: 100vw;
+  justify-content: space-around;
+  margin-top: 3%;
+  font-size: 23px;
+  font-weight: lighter;
+  letter-spacing: 3px;
+  z-index: 2;
+}
+
+.titreactu {
+  background-color: #6589b957;
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  position: absolute;
+  color: #ffffff;
+  font-size: 26px;
+  top: 46%;
+  left: 20%;
+  z-index: 10;
+}
+
+.slideshow-container {
+  position: absolute;
+  top: 42%;
+  margin-left: 12%;
+  width: 75vw;
+  height: 47vh;
+  background: #84a8d635;
+  border-radius: 15px;
+}
+
+.mySlides {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  display: none;
+  width: 80%;
+  padding-left: 20%;
+  padding-top: 10%;
+  text-align: justify;
+}
+
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(75, 114, 151, 0.459);
+  border-radius: 3px;
+  color: white;
+}
+
+.author {
+  color: cornflowerblue;
+}
+
+.divtraitement {
+  display: flex;
+  width: 100vw;
+}
+
+#group {
+  width: 800px;
+}
+
+#migraine {
+  padding-top: 80px;
+  padding-left: 80px;
+}
+
+.tetepopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+
+.coupopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+
+.toraxpopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.epaulespopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.bicepspopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.coudespopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.avantbraspopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.poignetspopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.mainspopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.bassinpopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.cuissespopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.genouxpopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.tibiaspopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.chevillespopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.piedspopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.fessierpopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.lombairespopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.dospopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+.nuquepopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+
+.fessierpopup {
+  width: 830px;
+  height: 730px;
+  left: 50%;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 10pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+}
+
+#pointpopup {
+  width: 140px;
+  height: 30px;
+  padding-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 2px solid aliceblue;
+  font-family: Arial, sans-serif;
+  font-size: 8pt;
+  background-color: white;
+  border-radius: 20px;
+  position: absolute;
+  display: none;
+  text-align: center;
+}
+
+.traitementcontainer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.705);
+  padding-left: 2%;
+  text-align: justify;
+  padding-top: 5%;
+}
+
+.divtraitement {
+  padding-bottom: 8%;
+}
+
+.articlestraitements {
+  margin-left: 8%;
+  margin-top: 3%;
+  width: 40%;
+}
+
+.chiro-explication {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+  margin-top: 5px;
+  background-color: #ffffff6b;
+}
+
+.textspine {
+  max-width: 650px;
+  width: 40%;
+  margin-top: 3%;
+  text-align: justify;
+}
+
+#logouser {
+  width: 24px;
+  fill: #f19d84;
+  cursor: pointer;
+}
+
+#logo2 {
+  width: 600px;
+  fill: #f19d84 !important;
+}
+
+#video1 {
+  width: 100vw;
+  opacity: 60%;
+}
+
+#hand1 {
+  position: absolute;
+  overflow: hidden;
+  height: 3500px;
+  top: 22%;
+  left: 81%;
+  opacity: 30%;
+}
+
+#hand2 {
+  position: absolute;
+  overflow: hidden;
+  height: 3500px;
+  top: 47%;
+  left: -47%;
+  opacity: 30%;
+}
+
+#torax:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#tete:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#tete2:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#cuisses:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+#cuisses2:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#genoux:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+#genoux2:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#tibias:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+#tibias2:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#chevilles:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+#chevilles2:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#pieds:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+#pieds2:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#bassin:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#ventre:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#coudes:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+#coudes2:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#mains:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+#mains2:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#poignets:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+#poignets2:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#avantbras:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+#avantbras2:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#biceps:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+#biceps2:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#epaules:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+#epaules2:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#cou:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#fessier:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#lombaires:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#dos:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+#nuque:hover {
+  animation: changeColor 1s infinite alternate;
+  cursor: pointer;
+}
+
+.video2 {
+  width: 680px;
+  height: 415px;
+  border-radius: 10px;
+}
+
+#video2 {
+  border: 50px solid #e7b6956b;
+  border-radius: 8px;
+  margin-top: -5px;
+  width: 580px;
+}
+
+.scrolldown {
+  --color: rgba(34, 108, 172, 0);
+  --sizeX: 30px;
+  --sizeY: 30px;
+  position: absolute;
+  bottom: 10%;
+  right: 50%;
+  width: var(--sizeX);
+  height: var(--sizeY);
+  margin-left: var(sizeX / 2);
+  border: calc(var(--sizeX) / 10) solid var(--color);
+  border-radius: 50px;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+}
+
+.scrolldown::before {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: var(--color);
+  border-radius: 100%;
+  animation: scrolldown-anim 2s infinite;
+  box-sizing: border-box;
+  box-shadow: 0px -5px 3px 1px rgba(33, 135, 224, 0);
+}
+
+@keyframes scrolldown-anim {
+  0% {
+    opacity: 0;
+    height: 6px;
+  }
+  40% {
+    opacity: 1;
+    height: 10px;
+  }
+  80% {
+    transform: translate(0, 20px);
+    height: 10px;
+    opacity: 0;
+  }
+  100% {
+    height: 3px;
+    opacity: 0;
+  }
+}
+.chevrons {
+  --color: rgb(133, 91, 71);
+  padding: 6px 0 0 0;
+  margin-left: -3px;
+  margin-top: 48px;
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chevrondown {
+  margin-top: -6px;
+  position: relative;
+  border: solid var(--color);
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  transform: rotate(45deg);
+  border-radius: 4px;
+}
+.chevrondown:nth-child(odd) {
+  animation: pulse 500ms ease infinite alternate;
+}
+.chevrondown:nth-child(even) {
+  animation: pulse 500ms ease infinite alternate 200ms;
+}
+@keyframes pulse {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+.histoire {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3%;
+  padding-left: 20%;
+  padding-right: 20%;
+  width: 100vw;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-around;
+}
+
+#histoire2,
+#techniques,
+#philo,
+#mission {
+  border-radius: 8px;
+  width: 300px;
+}
+
+.titrepatients {
+  background-color: rgba(255, 255, 255, 0.705);
+  width: 60%;
+  padding: 2%;
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-top: 5%;
+  margin-left: 21%;
+  border-bottom: black solid 1px;
+}
+
+.patients {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 8%;
+  padding-bottom: 25%;
+  width: 100vw;
+  height: 480px;
+  background-color: rgb(255, 255, 255);
+}
+
+.patients2 {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 2%;
+  padding-bottom: 25%;
+  width: 100vw;
+  height: 480px;
+  background-color: rgb(255, 255, 255);
+}
+
+.techniques,
+.histoire1,
+.mission,
+.philo {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+.articlesportifs {
+  width: 250px;
+  text-align: justify;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 40px;
+}
+
+.socrate {
+  width: 250px;
+  text-align: justify;
+  text-align: center;
+  font-size: 13px;
+  padding-left: 30px;
+}
+
+.titrechiro {
+  width: 60%;
+  font-size: 32px;
+  letter-spacing: 2px;
+  background-color: rgb(255, 255, 255);
+  padding: 3%;
+  margin-top: 5px;
+  margin-left: 21%;
+  border-bottom: black solid 1px;
+}
+
+.chiropracteurs {
+  width: 100vw;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-around;
+  padding-left: 25%;
+  padding-right: 25%;
+  border-bottom: 3px solid rgba(196, 142, 111, 0.13);
+}
+
+.tristandufour {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.simondewitte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.infostristan {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  font-size: 14px;
+}
+
+.titrecontact {
+  background-color: #ffffff;
+  margin-left: 21%;
+  width: 70%;
+  font-size: 32px;
+  letter-spacing: 2px;
+  padding: 3%;
+  border-bottom: black solid 1px;
+}
+
+.contact {
+  font-family: "tommyregular" !important;
+  height: 550px;
+  width: 60vw;
+  padding: 2%;
+  margin-left: 20%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.votrenom,
+.votreprenom,
+.votremessage,
+.votremail {
+  padding-bottom: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-top: 15px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #e6a08423;
+}
+
+.nom,
+.prenom,
+.email {
+  height: 28px;
+}
+
+.formbutton {
+  font-family: "tommyregular" !important;
+  font-size: 18px;
+  margin-top: 20px;
+  height: 50px;
+  border: none;
+  background-color: #619ecf46;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formmessage {
+  height: 140px;
+}
+
+.infospratiques {
+  background-color: #ffffff;
+  display: flex;
+  width: 100vw;
+  height: 480px;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 3%;
+}
+
+.titreinfospratiques {
+  background-color: #ffffff;
+  margin-left: 21%;
+  width: 70%;
+  font-size: 32px;
+  letter-spacing: 2px;
+  padding: 3%;
+  border-bottom: black solid 1px;
+}
+
+.horaires {
+  border: 3px solid rgb(250, 200, 185);
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  border-radius: 40px;
+  box-shadow: 4px 3px 6px rgb(250, 200, 185);
+  background-color: rgba(241, 168, 142, 0);
+}
+
+.horaires2 {
+  margin-top: 20%;
+}
+
+.tarifs {
+  border: 3px solid rgb(250, 200, 185);
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  border-radius: 40px;
+  box-shadow: 4px 3px 6px rgb(250, 200, 185);
+  background-color: rgba(241, 168, 142, 0);
+}
+
+.tarifs2 {
+  margin-top: 20%;
+}
+
+.avisgoogle {
+  background-color: #ffffff;
+  padding: 6%;
+}
+
+.titresocial {
+  background-color: #ffffff;
+  font-size: 24px;
+  padding-left: 18%;
+  padding-top: 4%;
+  letter-spacing: 1px;
+}
+
+.social {
+  background-color: #ffffff;
+  width: 100vw;
+  height: 200px;
+  margin-top: 2%;
+}
+
+.copyright {
+  background-color: #ffffff;
+  font-family: "tommyregular";
+  width: 100vw;
+  height: 20px;
+  font-size: 10px;
+  letter-spacing: 2px;
+  display: flex;
+  justify-content: space-around;
+  padding: 1%;
+  padding-bottom: 2%;
+}
+
+.divpointsup {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+}
+
+#pointsup {
+  margin-right: 200px;
+  transition: 0.5s;
+}
+
+#pointsup:hover {
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+
+:root {
+  --color-icon: #535c68;
+  --social-icon1: #e4405f;
+  --social-icon2: #3b5999;
+  --social-icon3: #33b0d6;
+  --social-icon4: #cd201f;
+  --social-icon5: #0077b5;
+}
+
+section {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+}
+
+.icon-list {
+  width: 100%;
+  max-width: 50rem;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-item {
+  list-style: none;
+  text-align: center;
+}
+
+.icon-link {
+  display: inline-flex;
+  font-size: 3rem;
+  text-decoration: none;
+  color: var(--color-icon);
+  width: 6rem;
+  height: 6rem;
+  transition: 0.5s linear;
+  position: relative;
+  z-index: 1;
+  margin: auto;
+}
+
+.icon-link:hover {
+  color: rgb(255, 255, 255);
+}
+
+.icon-link i {
+  margin: auto;
+}
+
+.icon-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 6rem;
+  height: 6rem;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  z-index: -1;
+  transform: scale(0);
+  transition: 0.3s cubic-bezier(0.95, 0.32, 0.37, 1.21);
+}
+
+.icon-link:hover::before {
+  transform: scale(1);
+}
+
+.icon-item:nth-child(1) a:hover:before {
+  background: var(--social-icon1);
+}
+
+.icon-item:nth-child(2) a:hover:before {
+  background: var(--social-icon2);
+}
+
+.icon-item:nth-child(3) a:hover:before {
+  background: var(--social-icon3);
+}
+
+.icon-item:nth-child(4) a:hover:before {
+  background: var(--social-icon4);
+}
+
+.icon-item:nth-child(5) a:hover:before {
+  background: var(--social-icon5);
+}
+
+#iconhover {
+  transition: 0.5s;
+}
+
+#iconhover:hover {
+  color: rgb(255, 255, 255) !important;
+  transition: 0.5s;
+}
+
+.fab-fa-youtube {
+  width: 10px;
+}
+
+
+
+
+@media screen and (max-width: 1750px) {
+  #hand1 {
+    top: 25%;
+  }
+
+  #hand2 {
+    left: -55%;
+  }
+
+  #simondewitte,
+  #tristandufour {
+    width: 200px;
+    height: 180px;
+  }
+
+  .poignetspopup,
+  .piedspopup,
+  .tibiaspopup,
+  .toraxpopup,
+  .cuissespopup,
+  .tetepopup,
+  .nuquepopup,
+  .coupopup,
+  .coudespopup,
+  .bicepspopup,
+  .mainspopup,
+  .avantbraspopup,
+  .epaulespopup,
+  .fessierpopup,
+  .chevillespopup,
+  .lombairespopup,
+  .dospopup {
+    width: 800px;
+  }
+
+}
+
+@media screen and (max-width: 1600px) {
+  P {
+    font-size: 16px;
+  }
+
+  h1 {
+    font-family: "tommyregular";
+    font-size: 22px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    overflow: hidden;
+  }
+
+  h2 {
+    font-family: "tommyregular";
+    padding-top: 100px;
+    overflow: hidden;
+  }
+
+  h3 {
+    font-family: "tommyregular";
+    padding-bottom: 2%;
+    font-size: 15px;
+  }
+
+  h5 {
+    font-family: "tommyregular";
+    font-size: 17px;
+    padding-bottom: 2%;
+  }
+
+  h6 {
+    font-family: "tommyregular";
+    font-size: 20px;
+    letter-spacing: 1px;
+    padding-bottom: 2%;
+  }
+
+  h4 {
+    font-family: "tommyregular";
+    font-size: 20px;
+    padding-bottom: 2%;
+    padding-left: 2%;
+  }
+
+  Q {
+    font-size: 16px;
+  }
+
+  .secondmenu {
+    font-size: 19px;
+  }
+
+  #group {
+    width: 700px;
+  }
+
+  .poignetspopup,
+  .piedspopup,
+  .tibiaspopup,
+  .toraxpopup,
+  .cuissespopup,
+  .tetepopup,
+  .nuquepopup,
+  .coupopup,
+  .coudespopup,
+  .bicepspopup,
+  .mainspopup,
+  .avantbraspopup,
+  .epaulespopup,
+  .fessierpopup,
+  .chevillespopup,
+  .lombairespopup,
+  .dospopup {
+    width: 700px;
+  }
+
+  .video2 {
+    width: 600px;
+  }
+
+  #video2 {
+    width: 550px;
+    margin-top: 50px;
+  }
+
+  #hand1 {
+    height: 2800px;
+    top: 20%;
+    left: 88%;
+  }
+
+  #hand2 {
+    height: 2800px;
+    top: 35%;
+    left: -56%;
+  }
+
+  .articlesportifs {
+    width: 250px;
+    text-align: justify;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 40px;
+    margin-left: 5px;
+  }
+
+  .articlemission {
+    width: 250px;
+    text-align: justify;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px;
+    padding-top: 32px;
+    margin-left: 40px;
+  }
+
+  .articletechnique {
+    width: 250px;
+    text-align: justify;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px;
+    padding-top: 32px;
+    margin-left: 40px;
+  }
+
+  .articlephilo {
+    width: 250px;
+    text-align: justify;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px;
+    padding-top: 32px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  P {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-family: "tommyregular";
+    font-size: 20px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    overflow: hidden;
+  }
+
+  h2 {
+    font-family: "tommyregular";
+    padding-top: 100px;
+    font-size: 18px;
+    overflow: hidden;
+  }
+
+  h3 {
+    font-family: "tommyregular";
+    padding-bottom: 2%;
+    font-size: 15px;
+  }
+
+  h5 {
+    font-family: "tommyregular";
+    font-size: 17px;
+    padding-bottom: 2%;
+  }
+
+  h6 {
+    font-family: "tommyregular";
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-bottom: 2%;
+  }
+
+  h4 {
+    font-family: "tommyregular";
+    font-size: 18px;
+    padding-bottom: 2%;
+    padding-left: 2%;
+  }
+
+  Q {
+    font-size: 15px;
+  }
+
+  .secondmenu {
+    font-size: 18px;
+  }
+
+  .titre1 {
+    font-size: 26px;
+  }
+
+  .titretraitements,
+  .titreinfospratiques,
+  .titresocial,
+  .titrepatients,
+  .titrechiro {
+    font-size: 24px;
+  }
+
+  .traitementcontainer {
+    padding-bottom: 10px;
+  }
+
+  .titretraitements {
+    width: 16%;
+  }
+
+  .poignetspopup,
+  .piedspopup,
+  .tibiaspopup,
+  .toraxpopup,
+  .cuissespopup,
+  .tetepopup,
+  .nuquepopup,
+  .coupopup,
+  .coudespopup,
+  .bicepspopup,
+  .mainspopup,
+  .avantbraspopup,
+  .epaulespopup,
+  .fessierpopup,
+  .chevillespopup,
+  .lombairespopup,
+  .dospopup {
+    width: 600px;
+  }
+
+  .chiro-explication {
+    padding-top: 10px;
+  }
+
+  #logo1 {
+    width: 150px;
+  }
+
+  #group {
+    width: 600px;
+  }
+
+  .video2 {
+    width: 600px;
+  }
+
+  #video2 {
+    width: 550px;
+    margin-top: 50px;
+  }
+
+  #hand1 {
+    height: 2200px;
+    top: 20%;
+    left: 82%;
+  }
+
+  #hand2 {
+    height: 2200px;
+    top: 45%;
+    left: -38%;
+  }
+
+  .articlesportifs {
+    width: 200px;
+    text-align: justify;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 40px;
+  }
+
+  #mission,
+  #histoire2,
+  #techniques,
+  #philo {
+    width: 250px;
+    height: 180px;
+  }
+
+  .patients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 8%;
+    padding-bottom: 25%;
+    width: 100vw;
+    height: 480px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .patients2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 25%;
+    width: 100vw;
+    height: 480px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  #actifs,
+  #sportifs,
+  #seniors,
+  #bebes,
+  #enfants,
+  #enceintes {
+    height: 200px;
+  }
+
+  .horaires,
+  .tarifs {
+    height: 280px;
+  }
+
+  .divpointsup {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+  }
+
+  #pointsup {
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  P {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-family: "tommyregular";
+    font-size: 18px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    overflow: hidden;
+  }
+
+  h2 {
+    font-family: "tommyregular";
+    font-size: 18px;
+    padding-top: 100px;
+    overflow: hidden;
+  }
+
+  h3 {
+    font-family: "tommyregular";
+    padding-bottom: 2%;
+    font-size: 15px;
+  }
+
+  h5 {
+    font-family: "tommyregular";
+    font-size: 17px;
+    padding-bottom: 2%;
+  }
+
+  h6 {
+    font-family: "tommyregular";
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding-bottom: 2%;
+  }
+
+  h4 {
+    font-family: "tommyregular";
+    font-size: 18px;
+    padding-bottom: 2%;
+    padding-left: 2%;
+  }
+
+  Q {
+    font-size: 13px;
+  }
+
+  #logo1 {
+    width: 150px;
+  }
+
+  #logouser {
+    width: 22px;
+  }
+
+  .titretraitements,
+  .titreinfospratiques,
+  .titresocial,
+  .titrepatients,
+  .titrechiro,
+  .titrecontact {
+    font-size: 22px;
+  }
+
+  .titretraitements {
+    width: 20%;
+  }
+
+  .adresse {
+    width: 150px;
+    font-size: 16px;
+  }
+
+  .rdv,
+  .numero {
+    font-size: 15px;
+    width: 180px;
+  }
+
+  .titre1 {
+    font-size: 24px;
+  }
+
+  .secondmenu {
+    font-size: 16px;
+  }
+
+  #group {
+    width: 530px;
+  }
+
+  #teteimg, #epaulesimg, #nuqueimg, #bicepsimg, #coudesimg, #avantbrasimg, #poignetsimg, #mainsimg, #ventreimg, #cuissesimg, #bassinimg, #tibiasimg, #genouximg, #chevillesimg, #piedsimg, #fessierimg, #lombairesimg, #dosimg {
+    width: 400px;
+  }
+
+  .traitementcontainer {
+    padding-bottom: 10px;
+  }
+
+  .poignetspopup,
+  .piedspopup,
+  .tibiaspopup,
+  .toraxpopup,
+  .cuissespopup,
+  .tetepopup,
+  .nuquepopup,
+  .coupopup,
+  .coudespopup,
+  .bicepspopup,
+  .mainspopup,
+  .avantbraspopup,
+  .epaulespopup,
+  .fessierpopup,
+  .chevillespopup,
+  .lombairespopup,
+  .dospopup {
+    width: 520px;
+  }
+
+  .chiro-explication {
+    padding-top: 10px;
+  }
+
+  .video2 {
+    width: 600px;
+  }
+
+  #video2 {
+    width: 450px;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
+
+  #hand1 {
+    height: 2200px;
+    top: 30%;
+    left: 82%;
+  }
+
+  #hand2 {
+    height: 2200px;
+    top: 50%;
+    left: -48%;
+  }
+
+  .articlesportifs {
+    width: 200px;
+    text-align: justify;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 40px;
+  }
+
+  #mission,
+  #histoire2,
+  #techniques,
+  #philo {
+    width: 250px;
+    height: 180px;
+  }
+
+  .patients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 8%;
+    padding-bottom: 25%;
+    width: 100vw;
+    height: 480px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .patients2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 2%;
+    padding-bottom: 25%;
+    width: 100vw;
+    height: 480px;
+    background-color: rgb(255, 255, 255);
+  }
+
+  #actifs,
+  #sportifs,
+  #seniors,
+  #bebes,
+  #enfants,
+  #enceintes {
+    height: 200px;
+  }
+
+  .horaires,
+  .tarifs {
+    height: 280px;
+  }
+
+  .divpointsup {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    height: 80px;
+  }
+
+  #pointsup {
+    margin-right: 80px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  P {
+    font-size: 12px;
+  }
+
+  Q {
+    font-size: 13px;
+  }
+
+  h1 {
+    font-family: "tommyregular";
+    font-size: 16px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    overflow: hidden;
+  }
+
+  h2 {
+    font-family: "tommyregular";
+    font-size: 16px;
+    padding-top: 50px;
+    overflow: hidden;
+  }
+
+  h3 {
+    font-family: "tommyregular";
+    padding-bottom: 2%;
+    font-size: 13px;
+  }
+
+  h5 {
+    font-family: "tommyregular";
+    font-size: 15px;
+    padding-bottom: 2%;
+  }
+
+  h6 {
+    font-family: "tommyregular";
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding-bottom: 2%;
+  }
+
+  h4 {
+    font-family: "tommyregular";
+    font-size: 16px;
+    padding-bottom: 2%;
+    padding-left: 2%;
+  }
+
+  .titre1 {
+    top: 20%;
+  }
+
+  .titreactu {
+    top: 38%;
+    font-size: 17px;
+  }
+
+  #hand1,
+  #hand2 {
+    display: none;
+  }
+
+  #logo1 {
+    width: 100px;
+  }
+
+  .header {
+    height: 100px;
+  }
+
+  .rdv,
+  .numero {
+    font-size: 13px;
+    width: 170px;
+    height: 40px;
+  }
+
+  .adresse {
+    font-size: 14px;
+  }
+
+  .secondmenu {
+    display: none;
+  }
+
+  .slideshow-container {
+    top: 37%;
+    height: 260px;
+  }
+
+  .mySlides {
+    padding-top: 35px;
+  }
+
+  .banner {
+    height: 100%;
+  }
+
+  .scrolldown {
+    display: none;
+  }
+
+  .titretraitements {
+    width: 190px;
+  }
+
+  .traitementcontainer {
+    padding: 1%;
+    padding-bottom: 0px;
+    height: 500px;
+  }
+
+  .divtraitement {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #group {
+    width: 350px;
+    padding-bottom: 100px;
+  }
+
+  .articlestraitements {
+    width: 300px;
+    margin-left: 0px;
+  }
+
+  .poignetspopup,
+  .piedspopup,
+  .tibiaspopup,
+  .toraxpopup,
+  .cuissespopup,
+  .tetepopup,
+  .nuquepopup,
+  .coupopup,
+  .coudespopup,
+  .bicepspopup,
+  .mainspopup,
+  .avantbraspopup,
+  .epaulespopup,
+  .fessierpopup,
+  .chevillespopup,
+  .lombairespopup,
+  .dospopup {
+    width: 400px;
+  }
+
+  .rdv2 {
+    font-size: 14px;
+    width: 260px;
+  }
+
+  .chiro-explication {
+    display: flex;
+    justify-content: space-around;
+    height: 350px;
+  }
+
+  .textspine {
+    width: 400px;
+    margin-left: 5%;
+  }
+
+  #video2 {
+    width: 350px;
+    border: 20px solid rgb(245, 188, 171);
+  }
+
+  #mission,
+  #histoire2,
+  #techniques,
+  #philo {
+    width: 200px;
+    height: 120px;
+  }
+
+  .histoire {
+    padding-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .titrepatients {
+    width: 220px;
+    margin-left: 33%;
+  }
+
+  .patients,
+  .patients2 {
+    height: 350px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    padding-top: 5%;
+  }
+
+  #actifs,
+  #sportifs,
+  #seniors,
+  #bebes,
+  #enfants,
+  #enceintes {
+    height: 130px;
+  }
+
+  .titrechiro {
+    width: 280px;
+    margin-left: 30%;
+  }
+
+  .titreinfospratiques {
+    width: 320px;
+    margin-left: 28%;
+  }
+
+  .infospratiques {
+    height: 400px;
+    padding-left: 7%;
+    padding-right: 7%;
+  }
+
+  .divpointsup {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .slideshow-container,
+  .titreactu,
+  .traitementcontainer,
+  .titretraitements {
+    display: none;
+  }
+
+  P {
+    font-size: 12px;
+  }
+
+  Q {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-family: "tommyregular";
+    font-size: 14px;
+    padding-bottom: 2%;
+    padding-top: 2%;
+    overflow: hidden;
+  }
+
+  h2 {
+    font-family: "tommyregular";
+    font-size: 14px;
+    padding-top: 30px;
+    overflow: hidden;
+  }
+
+  h3 {
+    font-family: "tommyregular";
+    padding-bottom: 2%;
+    font-size: 12px;
+  }
+
+  h5 {
+    font-family: "tommyregular";
+    font-size: 13px;
+    padding-bottom: 2%;
+  }
+
+  h6 {
+    font-family: "tommyregular";
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding-bottom: 2%;
+  }
+
+  h4 {
+    font-family: "tommyregular";
+    font-size: 14px;
+    padding-bottom: 2%;
+    padding-left: 2%;
+  }
+
+  .header {
+    position: absolute;
+  }
+
+  nav {
+    position: absolute;
+    right: 10px;
+  }
+
+  #logo1 {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 150px;
+  }
+
+  #logouser {
+    position: absolute;
+    right: 100px;
+  }
+
+  .titre1 {
+    top: 35%;
+  }
+
+  .rdv {
+    position: absolute;
+    top: 200%;
+  }
+
+  .numero {
+    position: absolute;
+    top: 260%;
+  }
+
+  .poignetspopup,
+  .piedspopup,
+  .tibiaspopup,
+  .toraxpopup,
+  .cuissespopup,
+  .tetepopup,
+  .nuquepopup,
+  .coupopup,
+  .coudespopup,
+  .bicepspopup,
+  .mainspopup,
+  .avantbraspopup,
+  .epaulespopup,
+  .fessierpopup,
+  .chevillespopup,
+  .lombairespopup,
+  .dospopup {
+    width: 280px;
+  }
+
+  .chiro-explication {
+    flex-direction: column;
+    height: 550px;
+  }
+
+  .patients,
+  .patients2 {
+    flex-direction: column;
+  }
+
+  .articlesportifs {
+    padding-top: 3%;
+    padding-bottom: 5%;
+  }
+
+  .sportifs,
+  .seniors,
+  .enceintes,
+  .actifs,
+  .enfants,
+  .bebes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titrepatients {
+    margin-left: 20%;
+    padding-bottom: 5%;
+  }
+
+  .titrecontact {
+    margin-left: 20px;
+  }
+
+  .contact {
+    padding: 10px;
+  }
+
+  .patients,
+  .patients2 {
+    height: 750px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #logo1 {
+    position: absolute;
+    width: 100px;
+    left: 5%;
+  }
+
+  .lettre {
+    font-size: 30px;
+  }
+
+  #bighand {
+    width: 200px;
+  }
+
+  .header {
+    position: relative;
+    height: 80px;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .adresse {
+    position: absolute;
+    margin-left: 20px;
+    width: 120px;
+    font-size: 12px;
+  }
+
+  nav {
+    position: absolute;
+  }
+
+  #logouser {
+    position: absolute;
+    right: 80px;
+  }
+
+  .titre1 {
+    top: 10px !important;
+    font-size:16px;
+    top: 14%;
+    left: 2%;
+    border-radius: 4px;
+  }
+
+  .ptitre1 {
+    width: 350px;
+    margin-left: 0px;
+  }
+
+  .rdv {
+    position: absolute;
+    width: 80vw;
+    top: 240%;
+  }
+
+  .numero {
+    position: absolute;
+    width: 80vw;
+    top: 310%;
+  }
+
+  .chiro-explication {
+    height: 530px;
+  }
+
+  .textspine {
+    width: 330px;
+  }
+
+  .video2 {
+    width: 330px;
+  }
+
+  #video2 {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .articlesportifs {
+    padding-top: 3%;
+    padding-bottom: 5%;
+  }
+
+  .sportifs,
+  .seniors,
+  .enceintes,
+  .actifs,
+  .enfants,
+  .bebes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titrepatients {
+    margin-left: 20%;
+    padding-bottom: 5%;
+  }
+
+  .patients,
+  .patients2 {
+    width: 350px;
+    height: 850px;
+    flex-direction: column;
+  }
+
+  .titrechiro {
+    margin-left: 15%;
+    padding-bottom: 5%;
+  }
+
+  .chiropracteurs {
+    height: 580px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infostristan {
+    padding-top: 5%;
+    padding-right: 0px;
+  }
+
+  .simondewitte,
+  .tristandufour {
+    margin-top: 40px;
+    align-items: center;
+  }
+
+  #simondewitte,
+  #tristandufour {
+    width: 150px;
+    height: 150px;
+  }
+
+
+  .titreinfospratiques {
+    margin-left: 10%;
+  }
+
+  .horaires,
+  .tarifs {
+    height: 250px;
+    margin-top: 10%;
+    padding-top: 8%;
+  }
+
+  .horaires2,
+  .tarifs2 {
+    margin-top: 5%;
+    padding-top: 1%;
+  }
+
+  .infospratiques {
+    flex-direction: column;
+    height: 600px;
+  }
+
+  .titresocial {
+    font-size: 16px;
+    margin-top: 5%;
+    padding-left: 10%;
+  }
+
+  .icon-link {
+    width: 30px;
+  }
+
+  .copyright {
+    font-size: 5px;
+    padding-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #logo1 {
+    width: 80px;
+  }
+
+  .header {
+    height: 65px;
+  }
+
+  .nav-links {
+    font-size: 12px;
+    width: 300px;
+    margin-left: 1%;
+  }
+
+  .adresse {
+    font-size: 10px;
+    margin-right: 20px;
+  }
+
+  #logouser {
+    width: 18px;
+  }
+
+  .textspine {
+    width: 270px;
+  }
+
+  #video2 {
+    width: 280px;
+  }
+
+  .patients {
+    width: 350px;
+  }
+
+  .titrepatients {
+    margin: 6%;
+    width: 280px;
+  }
+
+  .titrechiro {
+    margin: 5%;
+  }
+
+  .titreinfospratiques {
+    margin: 3%;
+    width: 300px;
+  }
+
+  .titresocial {
+    margin-left: 3%;
+  }
+
+  .copyright {
+    font-size: 4px;
+  }
+
+}
